@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Lunch"
+    }
+  },
+  "defaultProject": "Lunch",
+  "cli": {
+    "analytics": "876d6844-3051-4f82-9cfb-ca6603f578e5"
+  }
 }

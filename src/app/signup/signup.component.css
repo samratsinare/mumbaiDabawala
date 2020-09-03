@@ -1,0 +1,243 @@
+
+/*body
+{
+    background-image: url(/ImageDesign/leftback.jpg);
+    background-repeat: no-repeat;
+}
+*/
+
+#row1
+{
+    /*border:1px solid black;*/
+    display:flex;
+    background-repeat: no-repeat;
+    height: 600px;
+
+    margin-top: 40px;
+
+    margin-left: 50px;
+
+    margin-right: 100px;
+
+}
+
+#colleft
+{
+    border-right: 1px solid black;
+
+    background-color: rgba(240,255,240,0.8);
+
+    display: flex;
+
+    flex-direction: column;
+
+   background-repeat: no-repeat;
+
+    background-size: cover;
+
+    border-top-left-radius: 10%;
+
+    border-bottom-left-radius: 10%;
+
+    
+   
+}
+
+.tiffinicon
+{
+    margin-left: 150px;
+
+    margin-top: 50px;
+}
+
+.joinus
+{
+    margin-top: 80px;
+
+    margin-left: 150px;
+}
+
+.joinus p
+{
+font-size: 30px;
+
+font-family: sans-serif;
+
+ color: rgb(98, 194, 194);
+}
+
+.joinicon
+{
+    margin-top: 10px;
+
+    margin-left: 230px;
+}
+.known
+{
+    margin-top: 20px;
+
+    margin-left: 140px;
+}
+
+.AboutUs
+{
+    margin-top: 20px;
+
+    margin-left: 190px;
+}
+
+#button1
+{
+    width: 150px;
+
+    height: 50px;
+
+    border-radius: 20px;
+
+    border:2px solid white;
+
+    font-size: 20px;
+
+    background-color:rgb(98, 194, 194);
+
+    color:floralwhite;
+}
+
+#colright
+{
+    background-color:rgba(98, 194, 194,0.8);
+
+    
+}
+#colright span
+{
+    margin-left: 330px;
+}
+
+/*#username
+{
+
+    margin-top: 50px;
+}*/
+
+
+ .titleup
+ {
+ 
+     margin-left: 230px;
+     margin-top: 10px;
+
+ }
+
+ .titleup p
+ {
+     font-size: 30px;
+     color: whitesmoke;
+     font-family: sans-serif;
+ }
+
+ #userName
+{
+    width:300px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+ #mail
+ {
+    width:300px;
+    margin-left: 150px;
+    margin-top: 20px;
+ }
+
+ #mobile
+ {
+    width:300px;
+    margin-left: 150px;
+    margin-top: 20px;
+ }
+
+ #passwordid
+ {
+    width:300px;
+    margin-left: 150px;
+    margin-top: 20px;
+ }
+
+ #address
+ {
+    width:300px;
+    margin-left: 150px;
+    margin-top: 20px;
+ }
+
+ #Agree
+ {
+    margin-left: 250px;
+    margin-top: 20px;
+ }
+.form-check-label
+{
+    color: black;
+}
+
+
+ #signup
+ {
+     margin-top: 40px;
+     margin-left: 250px;
+
+     width: 150px;
+
+     height: 50px;
+ 
+     border-radius: 20px;
+ 
+     border:2px solid white;
+ 
+     font-size: 20px;
+ 
+     background-color:floralwhite;
+ 
+     color:rgb(98, 194, 194);
+ }
+
+ #navbar
+{
+    height: 75px;
+    width:100%;
+    
+}
+#brand
+{
+   font-size: 30px;
+  color: rgb(98, 194, 194);
+   font-family: sans-serif;
+   font-weight: bold;
+}
+
+
+.btn1
+{
+   width: 130px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: rgb(98, 194, 194);
+}
+.btn2
+{
+  margin-left: 40px;
+  width: 130px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: rgb(98, 194, 194);
+}
+
+.parent
+{
+    height: 740px;
+    width: 100%;
+    background-image: url(E:\CDAC feb_20\MainProject\Lunch\src\assets\images\tiffin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

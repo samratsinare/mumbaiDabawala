@@ -1,0 +1,119 @@
+
+<div class="parent">
+
+  <nav class="navbar navbar-expand-lg bg-dark"id="navbar">
+
+
+    <div class = "col-6 bg-dark" id="brand">
+  
+         <p>DaBBaWaaLa.Com</p>
+  
+    </div>
+  
+    <div class = "col-6 bg-dark" id="buttoninfo">
+    
+      <button class="btn1">Home</button>    
+  
+      <button class="btn2">About Us</button>
+
+      <button class="btn3"(click)="gotopage('signup')">Sign Up</button>
+  
+  </div>
+  
+  </nav>
+
+<div class="container-fluid">
+
+    <div class="row" id="row1">
+        
+    <div class = "col-8  d-flex">
+      <span><b>Sign In To Account</b></span>
+     
+      <div class="iconsfg">
+
+       <div class = "fb"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></div>
+
+      <div class="linkdin"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></div>  
+
+      <div class = "googleplus"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></div>
+
+      </div>
+
+      <p>or use Your Account</p>
+
+      <div [formGroup] = "fbFormGroup" >
+
+        <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+
+           Email Or Password Is Incorrect
+
+        </div>
+
+      <div class = "form1">
+
+          <div class="a">
+          
+          <input type="email" class="form-control" id="InputEmail1" formControlName="email" 
+          
+          placeholder="email">
+
+        </div>
+
+        <div class="b">
+          
+          <input type="password" class="form-control" id="InputPassword1" formControlName="password" 
+          
+          placeholder="Password" autocomplete="on">
+
+        </div>
+
+        <div class = "remfor">
+
+        <div class="form-group form-check">
+
+          <input type="checkbox" class="form-check-input" id="Check1" >
+
+          <label class="form-check-label" for="Check1">Remember me</label>
+
+        </div>
+
+         <div class = "forgot">
+
+          <a href="#" style="text-decoration: none;color:black;">Forgot Password?</a>
+
+         </div>
+
+      </div>
+
+      <div class = "Signin">
+        
+        <button type="submit" id="signin" (click)="loginprocess()" >Sign In</button> 
+
+      </div>  
+
+      </div>
+
+      </div>  
+      
+      <div class = "pricondition">
+
+        <p><i class="fa fa-circle" aria-hidden="true"></i> Terms and Condition</p>
+
+      </div>
+       
+    </div>
+    <div class = "col-4  d-flex">
+       <span>Hello, Friends!</span><br>
+
+       <p style="margin-top: 10px;">Fill The Personal Information and<br> &nbsp &nbsp; Start your journey with us</p> 
+
+      <div class="userplus"><i class="fa fa-user-plus fa-2x" aria-hidden="true"></i></div> 
+
+       <a href="http://127.0.0.1:5500/myWebApp/Regestration.html" class="btn btn-info" role="button" id="button1" target="_blank">SignUp</a>
+      
+      </div>
+
+    </div>
+
+</div>
+  

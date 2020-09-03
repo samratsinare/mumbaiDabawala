@@ -1,0 +1,102 @@
+
+#navbar
+{
+    height: 75px;
+    width:100%;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+    
+}
+#brand
+{
+   font-size: 30px;
+   color: rgb(98, 194, 194);;
+   font-family: sans-serif;
+   font-weight: bold;
+    
+}
+
+.btn1
+{
+   width: 130px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: rgb(98, 194, 194);
+}
+.btn2
+{
+  margin-left: 40px;
+  width: 130px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: rgb(98, 194, 194);
+}
+
+.btn3
+{
+  margin-left: 40px;
+  width: 130px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: rgb(98, 194, 194);
+}
+
+#row1
+{
+    height: 650px;
+    margin-top: 70px;
+}
+
+.col-4 p
+{
+    font-size: 15px;
+    font-family: "lato";
+    line-height: 28px;
+    color: floralwhite;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+
+    padding-left: 100px;
+}
+.container-fluid
+{
+flex-direction: column;
+}
+
+#mailid
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.col-12
+{
+  display: flex;
+   
+   margin-top: 1px;
+
+   justify-content: center;
+}
+#top p
+{
+  font-size: 30px;
+    font-family: "lato";
+    line-height: 28px;
+    color: floralwhite;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#buttonindex
+{
+   margin-left: 400px;
+   width: 150px;
+   height: 40px;
+   margin-top: 5px;
+   border-radius: 10px;
+}

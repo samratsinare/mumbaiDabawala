@@ -1,0 +1,121 @@
+<div class="parent">
+<nav class="navbar navbar-expand-lg bg-dark"id="navbar">
+
+
+  <div class = "col-6 bg-dark" id="brand">
+
+       <p>DaBBaWaaLa.Com</p>
+
+  </div>
+
+  <div class = "col-6 bg-dark" id="buttoninfo">
+  
+    <button class="btn1"  >AboutUs</button>    
+
+    <button class="btn2"(click)="gotopage('login')">Login</button>
+
+</div>
+
+</nav>
+
+<div class="container-fluid">
+
+    <div class="row" id="row1">
+
+      <div class ="col-5 " id="colleft">
+
+
+      <div class = "joinus">
+        <p><b>Few Steps Away From Your 1st Order</b></p>
+      </div>
+
+      <div class = "joinicon">
+        
+        <i class="fa fa-hand-o-right fa-3x " style="color: rgb(98, 194, 194);" aria-hidden="true"></i>
+
+      </div>
+
+      <div class = "known">
+       
+        <p style="color: rgb(98, 194, 194);">To known More About Us Click Below</p>
+
+      </div>
+
+    
+            
+      </div>
+
+      <div class = "col-7 " id="colright">
+
+        <div class = "img"></div>
+
+       <div class = "titleup">
+
+         <p><b>Sign Up here</b></p>
+
+       </div>
+                  <form>
+         <div [formGroup] = "fbFormGroup">
+
+          <div class ="col-12 mt-3  d-flex " id="Username">
+
+          <input type="text" id="userName" placeholder="Full Name" 
+          
+          class="form-control" formControlName="username"autofocus required>
+
+          </div>
+
+          <div class ="col-12 mt-3  d-flex " id="Email">
+
+            <input type="email" id="mail" placeholder="Email" 
+            
+            class="form-control" formControlName="email" autofocus required> 
+
+            </div>
+
+            <div class ="col-12 mt-3  d-flex " id="Mobile">
+
+              <input type="number" id="mobile" placeholder="MobileNumber" 
+              
+              class="form-control" formControlName="mobile" autofocus required >
+
+              </div>
+
+                <div class ="col-12 mt-3  d-flex ">
+
+                  <input type="password" id="passwordid" placeholder="Password" 
+                  
+                  class="form-control" formControlName="password" autocomplete="on" maxlength="8">
+  
+
+                </div>
+
+                  <div class ="col-12 mt-3 d-flex " id="Address">
+
+                    <input type="text" id="address" placeholder="Address" 
+    
+                    class="form-control" formControlName="address" autofocus required> 
+      
+                    </div>
+
+                  <div class ="col-12 mt-3  d-flex " id="Agree">
+
+                    <input type="checkbox" class="form-check-input" id="Check1" >
+
+                    <label class="form-check-label" for="Check1"><b>I Agree terms and condition</b></label>
+        
+                  </div>
+
+
+                  <div class = "SignUp">
+
+                    <button id="signup"(click)="signup()">Signup</button>
+        
+                  </div>
+
+                </div>
+              </form>
+      </div>
+    </div>
+    
+</div>
