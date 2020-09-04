@@ -10,12 +10,14 @@
     </div>
   
     <div class = "col-6 bg-dark" id="buttoninfo">
+
+      <button class="btn1" type="submit"(click)="gotopage('/home/homeimage')">Home</button>
   
-      <button class="btn1" type="submit">Our Services</button>    
+      <button class="btn2" type="submit"(click)="gotopage('/home/services')">Our Services</button>    
   
-      <button class="btn2" type="submit">Contact Us</button>
+      <button class="btn3" type="submit">Donate Us</button>
   
-      <button  class="btn3" type="submit"(click)="jump('login')">LogOut</button>
+      <button  class="btn4" type="submit"(click)="logoutprocess()">LogOut</button>
   
       
   
@@ -24,11 +26,17 @@
   </nav>
   
   <div class="row" id="row1">
+
+    <router-outlet></router-outlet>
   
     <div class="row">
 
-        <img src="https://mumbaidabbawala.in/wp-content/uploads/2020/01/gate-3.gif" alt="" height="650" width="100%">
+      <!--<img src="https://mumbaidabbawala.in/wp-content/uploads/2020/01/gate-3.gif" alt="" height="650" width="100%">
     
+         Get Your DaBBa At Your Work Place-->
+
+         
+
       </div>
      
     
@@ -98,5 +106,11 @@
   </div>
   
   </div>
+
+  
   
   </footer>
+
+  
+
+  

@@ -13,6 +13,7 @@ export class LoginComponent {
 
   public uiInvalidCredential = false;
 
+
   public fbFormGroup = this.fb.group({
     email:['', Validators.required],
     password: ['', Validators.required],
@@ -28,17 +29,18 @@ export class LoginComponent {
 
   async loginprocess()
   {
-     const data = this.fbFormGroup.value;
+       const data = this.fbFormGroup.value;
+    
 
      const url = 'http://localhost:5700/loginuser';
 
-    const result: any = await this.http.post(url, data).toPromise();
+     const result: any= await this.http.post(url, data).toPromise();
 
     if (result.opr) 
     
     {
       sessionStorage.setItem('sid', 'true');
-      this.router.navigate(['home']);
+      this.router.navigate(['/home/homeimage']);
     } 
     
     else {

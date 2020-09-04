@@ -1,0 +1,50 @@
+
+#row1
+{
+    height: 750px;
+   /*justify-content: center;
+   align-items: center*/
+   display: flex;
+   flex-direction: column;
+    
+}
+
+.emoji
+{
+
+      margin-left: 650px;
+      margin-top: 100px;
+
+}
+
+.error404
+{
+    margin-left:680px;
+}
+
+.error404 p
+{
+  font-size: 60px;
+}
+
+.page
+{
+    margin-left:630px;
+    font-size:30px;
+}
+
+.pageoccur
+{
+    margin-left:530px;
+    margin-top: 10px;
+
+}
+
+.btn
+{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    margin-left: 630px;
+    background-color: honeydew;
+}

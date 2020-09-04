@@ -43,11 +43,23 @@
    background-color: rgb(98, 194, 194);
 }
 
+.btn4
+{
+  margin-left: 40px;
+  width: 130px;
+   height: 40px;
+   border-radius: 10px;
+   background-color: rgb(98, 194, 194);
+}
+
 #row1
 {
     height: 650px;
     margin-top: 70px;
-}
+    display: flex;
+
+    
+  }
 
 .col-4 p
 {

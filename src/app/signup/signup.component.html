@@ -55,14 +55,30 @@
 
        </div>
                   <form>
-         <div [formGroup] = "fbFormGroup">
+         <div [formGroup] = "fbFormGroup" novalidate>
+
+          <div class="alert alert-info" role="alert" *ngIf="invaliddata">
+
+           Fill the mandatory Fields
+ 
+         </div>
 
           <div class ="col-12 mt-3  d-flex " id="Username">
 
-          <input type="text" id="userName" placeholder="Full Name" 
+          <input type="text" id="userName" placeholder="Full Name" minlength="3"
           
-          class="form-control" formControlName="username"autofocus required>
+          class="form-control" formControlName="username"  required>
 
+          <div class="validations" 
+          *ngIf="fbFormGroup.controls['username'].hasError('required') && (fbFormGroup.controls['username'].touched)">
+          name is required*
+      </div>
+        
+      <div class="validations"
+      *ngIf="fbFormGroup.controls['username'].hasError('minlength') && (fbFormGroup.controls['username'].touched)">
+       Name must have min 4 character
+  </div>
+  
           </div>
 
           <div class ="col-12 mt-3  d-flex " id="Email">
@@ -71,13 +87,28 @@
             
             class="form-control" formControlName="email" autofocus required> 
 
+            <div class="validations"
+
+            *ngIf="fbFormGroup.controls['email'].hasError('required') && fbFormGroup.controls['email'].touched">
+            Email Id is required*
+        </div>
+
             </div>
 
             <div class ="col-12 mt-3  d-flex " id="Mobile">
 
-              <input type="number" id="mobile" placeholder="MobileNumber" 
+              <input type="text" id="mobile" placeholder="MobileNumber" maxlength="10"
               
               class="form-control" formControlName="mobile" autofocus required >
+
+          <div class="validations" 
+           *ngIf="fbFormGroup.controls['mobile'].hasError('required') && (fbFormGroup.controls['mobile'].touched)">
+          Mobile Number is required*
+      </div>
+      <div class="validations"
+                 *ngIf="fbFormGroup.controls['mobile'].hasError('pattern')">
+                  Invalid Contact Number.
+                  </div>
 
               </div>
 
@@ -86,6 +117,12 @@
                   <input type="password" id="passwordid" placeholder="Password" 
                   
                   class="form-control" formControlName="password" autocomplete="on" maxlength="8">
+              
+                  <div class="validations"
+
+                  *ngIf="fbFormGroup.get('password').hasError('required') && fbFormGroup.get('password').touched">
+
+                  Password is required*</div>
   
 
                 </div>

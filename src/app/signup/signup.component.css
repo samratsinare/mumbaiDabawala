@@ -241,3 +241,7 @@ font-family: sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.validations
+{
+    color: red;
+}

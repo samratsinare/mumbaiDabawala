@@ -12,6 +12,11 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
 import { HomeComponent } from './home/home.component';
+import { LogoutComponent } from './logout/logout.component';
+import { ServicesComponent } from './services/services.component';
+import { HomeimageComponent } from './homeimage/homeimage.component';
+import { DabbaserviceComponent } from './dabbaservice/dabbaservice.component';
+import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +25,11 @@ import { HomeComponent } from './home/home.component';
     SignupComponent,
     ErrorpageComponent,
     HomeComponent,
+    LogoutComponent,
+    ServicesComponent,
+    HomeimageComponent,
+    DabbaserviceComponent,
+    ForgotpasswordComponent,
   ],
   imports: [
     BrowserModule,

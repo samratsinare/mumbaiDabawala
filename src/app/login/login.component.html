@@ -43,12 +43,11 @@
 
       <div [formGroup] = "fbFormGroup" >
 
-        <div class="alert alert-danger" role="alert" *ngIf="uiInvalidCredential">
+        <div class="alert alert-info" role="alert" *ngIf="uiInvalidCredential">
 
-           Email Or Password Is Incorrect
+          Something Wrong has entered
 
         </div>
-
       <div class = "form1">
 
           <div class="a">
@@ -79,7 +78,7 @@
 
          <div class = "forgot">
 
-          <a href="#" style="text-decoration: none;color:black;">Forgot Password?</a>
+          <a routerLink="/forgotpassword" style="text-decoration: none;color:black;">Forgot Password?</a>
 
          </div>
 

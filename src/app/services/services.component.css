@@ -1,0 +1,87 @@
+#row1
+{
+    display: flex;
+
+}
+.colleft
+{
+    height: 650px;
+    width: 830px;
+    background-image: url(E:\CDAC feb_20\MainProject\Lunch\src\assets\images\backgroundimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.colright
+{
+    /*background-image: url(E:\CDAC feb_20\MainProject\Lunch\src\assets\images\icon..jpg);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+
+    background-color: rgb(98, 194, 194);
+
+    height: 650px;
+    width: 750px;
+}
+
+.mainform
+{
+     height: 500px;
+     width: 500px;
+     /*background-color:rgba(21, 61, 21, 0.7);*/
+     padding-left: 80px;
+     margin-left: 100px;
+     margin-top: 40px;
+     padding-top: 30px;
+
+}
+
+ .btn1
+ {
+     border-radius: 50%;
+     width: 150px;
+     height: 130px;
+     background-color:honeydew ;
+     color: black;
+     font-size: 15px;
+ }
+
+ .btn2
+ {
+     border-radius: 50%;
+     width: 150px;
+     height: 130px;
+     background-color:honeydew ;
+     margin-left: 30px;
+     font-size: 15px;
+ }
+
+ .stop
+ {
+    margin-top: 60px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-family: sans-serif;
+ }
+
+ .btn3
+ {
+    margin-top: 50px;
+    width: 200px;
+    border-radius: 5px;
+ }
+
+ .btn4
+ {
+     width:150px;
+     height: 40px;
+     margin-left: 30px;
+     border-radius: 20px;
+     background-color: honeydew;
+ }
+
+ input
+ {
+     width: 250px;
+     height: 35px;
+ }

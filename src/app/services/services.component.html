@@ -1,0 +1,68 @@
+<div class="row" id="row1">
+
+    <div class="colleft">
+
+     <p style="padding-left: 270px;padding-top: 30px;
+     
+     font-size: 50px;color:black;font-family: monospace;">Dabba Service</p>
+
+     <p style="padding-left: 40px;color: whitesmoke;font-size: 20px;">Since 1890,Mumbai Army of 5,000 Dabbawalas fulfilling the hunger of almost 200,000<br>
+        
+        Mumbaikar with home-cooked food that we lug between home and office daily<br>
+        
+        Our core service is Dabba delivery i.e. delivering home cooked food from your house/mess to your work place. <br>
+        
+        We operate pan Mumbai from Virar to Churchgate and from Ambernath to Dadar.<br>
+        
+        It’s not as simple as it sounds, <br>
+        
+        Battle with time and weather our day ends with an emotional satisfaction and happiness because we firmly believe in the philosophy of<br></p> <br>
+        
+        <p style="padding-left: 60px;font-size: 30px;color:red;">“<em>Anna daan is maha daan”(Donating food is the best charity)</em></p>
+
+    </div>
+
+    <div class="colright">
+
+       <p style="padding-top:30px;padding-left:150px;font-size: 30px;font-family:sans-serif;">
+        
+        We Will Reach At Your DoorStep</p>
+
+        <div class="mainform">
+
+      
+          <button class="btn1" type="submit"(click)="gotopage('/home/dabbaservice')">Dabba Service</button>
+
+          <button class="btn2" type="submit">Catering Service</button>
+
+          <div class="stop">
+             Enter Your Adhar Number Below To Stop Service
+          </div>
+
+          <div [formGroup] = "fbFormGroup">
+
+           
+            
+            <input type="number" placeholder="Adhar Number*"class="btn3" formControlName="adhar" minlength="3">
+
+            <button class="btn4" (click)="stopserviceprocess()">Stop Service</button>  
+
+            <div class="alert" style="color: red;font-size: 20px;" role="alert" *ngIf="empty">
+
+              Invalid adhar number
+
+            </div>
+
+            <div>
+
+          </div>
+
+          </div>
+
+</div>
+
+</div>
+  
+
+  </div>
+  

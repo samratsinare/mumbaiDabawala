@@ -14,10 +14,12 @@ import {FormGroup} from '@angular/forms';
 })
 export class SignupComponent {
 
+  public invaliddata = false;
+
   public fbFormGroup = this.fb.group({
     username: ['', Validators.required],
     email: ['', Validators.required],
-    mobile: ['', Validators.required],
+    mobile: ['',[Validators.required,Validators.maxLength(10),Validators.pattern('^[789][0-9]{9}')]],
     password: ['',Validators.required],
     address: ['', Validators.required]
   });
@@ -35,11 +37,18 @@ export class SignupComponent {
 
     const url = 'http://localhost:5700/adduser';
 
-    const result = await this.http.post(url,data).toPromise();
+    const result :any = await this.http.post(url,data).toPromise();
 
-     console.log(data);
+     if(this.fbFormGroup.valid)
+     {
+       alert("Succesfully Registerd")
+      this.router.navigate([''])
+     }
   
-       this.router.navigate([''])
+      else
+      {
+        this.invaliddata = true;
+      }
      
    }
 

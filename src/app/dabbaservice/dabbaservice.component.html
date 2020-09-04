@@ -1,0 +1,54 @@
+<div class="row" id="row1">
+
+    <div class="maindiv">
+
+        <p>We will Reach At your Doorsteps</p>
+
+        <div [formGroup] = "fbFormGroup">
+
+            <div class="alert" style="background-color:rgba(240,255,240,0.7); ;" role="alert" *ngIf="emptydata">
+
+                All Fields Are Compulsary
+     
+             </div>
+
+        <div class="a">
+
+        <input type="number"  placeholder="Adhar Number" 
+              
+        class="form-control" formControlName="adhar" autofocus required >
+
+    </div>
+
+      <div class ="p">
+
+        <input type="text" placeholder="PickUp Point" 
+    
+        class="form-control" formControlName="pickup" autofocus required> 
+
+    </div>
+
+    <div class ="d">
+      
+        <input type="text" placeholder="DropPoint" 
+    
+        class="form-control" formControlName="droppoint" autofocus required> 
+
+    </div>
+
+    <div class ="q">
+
+        <input type="number" placeholder="Quantity" 
+              
+        class="form-control" formControlName="quantity" autofocus required >
+
+    </div>
+<div>
+    <button class="btn" type="submit"(click)="getservice()">Get Service</button>
+
+</div>
+</div>
+
+    </div>
+
+    </div>
